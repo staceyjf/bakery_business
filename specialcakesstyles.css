@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+/* Optmised to small screens*/
+html * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 975px;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.3em;
+	font-family: Arial, sans-serif;
+	background-color: #FFFFFF;	
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 1000;	
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.2em;
+	line-height: 1.5em;
+	color: #000000;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.5em;
+	color: #000000;
+}
+
+p {
+	text-align: center;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	height: 20px;
+	color: #0B0B0B;
+	position: relative;
+	font-size: xx-small;
+}
+
+/* Logo */
+.site_logo {
+	float: left;
+	position: relative;
+	display: block;
+}
+
+/* Navigation bar */
+nav {
+	position: relative;
+	float: right;
+	z-index: 200;
+	top: auto;
+	left: auto;
+	display: block !important;
+	background: none;
+}
+
+ul {
+	background-color: #FFFFFF;
+	list-style-type: none;
+	padding: 5px;
+	text-align: right;
+}
+
+li {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-bottom: 0;
+}
+
+li a {
+	display: block;
+	padding: 14px 16px;
+	color: #000000;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #0C243C;
+	color: #FFFFFF;	
+}
+
+li a:active {
+	background-color: #E94D40;
+	border: 0;
+	color: #FFFFFF;	
+}
+
+/* Overall Layout */
+grid_container1 {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 0px;
+	background: #0C243C;
+}
+
+/* Web banner */
+.webbanner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-top: 10em;	
+}
+
+.webbannermain {
+	position: relative;
+}
+
+.bannerimg {
+	opacity: 0.6;
+	width: 100%;
+	height: auto;
+}
+
+.bannertitle {
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+}
+img {
+	min-height: auto;
+	width: 100%;
+}
+
+/* Body text & image */
+.herovisual {
+	height: auto;
+}
+
+.herotext {
+	padding: 3%;
+	background-color: #0C243C;
+	color: #FFFFFF;
+	font-size: large;
+	font-variant: small-caps;	
+}
+
+.textgrid2 {
+	padding: 5%;
+	background-color: #E94D40;
+}
+
+.textothera {
+	text-decoration: none;
+	color: #FDFDFD;
+}
+
+.textgrid3 {
+	padding-right: 3%;
+	padding-left: 3%;
+	background-color: #E94D40;
+	padding-top: 1%;
+}
+
+.textgrid4 {
+	background-color: #0C243C;
+	color: #FFFFFF;
+}
+
+/* Table */
+.table {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	font-size: small;
+}
+
+.tablejob {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tableheader {
+	background-color: #000000;
+	padding: 2%;
+	scope: col;
+	color: #FFFFFF;
+}
+
+.tablebody {
+	color: #050505;
+}
+
+input, textarea {
+	margin: 2px 0;
+	display: inline-block;
+}
+
+label {
+	display: inline-block;
+	width: 11em;
+}
+
+/* classes */
+.burntred {
+	color: #E94D40;
+}
+
+.navyblue {
+	color: #0C243C;
+}
+
+
+/* Large screen - Min screen size 1200px */
+@media screen and (min-width:1200px){
+
+html * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	max-width: 1200px;
+}
+	
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.65em;
+	line-height: 2em;
+	color: #000000;
+}
+	
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 2em;
+	color: #000000;
+}
+	
+/* Web banner */
+.webbanner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-top: 5em;
+}
+	
+.bannertitle {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+	
+/* Body text & image */
+	
+.grid_container2 {
+	display: grid;
+	grid-template-columns: 975px 1fr;
+	grid-auto-rows: 750px;
+	grid-gap: 0px;
+	grid-auto-flow: column;
+}
+	
+.textgrid2 {
+	padding-top: 75%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: #E94D40;
+	font-size: 0.75em;
+}
+	
+.tableheader {
+	background-color: #000000;
+	padding: 2%;
+	scope: col;
+	color: #FFFFFF;
+	font-size: 0.9em;
+}
+	
+.tablebody {
+	color: #050505;
+	font-size: 0.85em;
+}
+}
